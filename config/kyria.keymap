@@ -33,7 +33,7 @@
                                                &none     &tog NUMBER  &kp BACKSPACE       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
             >;
 
-			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
 		};
 
 		NUMBER_layer {
@@ -44,7 +44,7 @@
                                                                &none    &tog NUMBER  &kp BACKSPACE            &kp LEFT_SHIFT     &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none
             >;
 
-			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
 		};
 
  		SYMBOL_layer {
@@ -54,7 +54,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans  &sl SYMBOL &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
             &none    &tog NUMBER  &kp BACKSPACE &kp LEFT_SHIFT  &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none 
             >;
- 			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
+ 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
  		};
 
  		FUNCTION_layer {
@@ -76,7 +76,7 @@
                                   &trans   &tog NUMBER  &kp K_UNDO   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp K_REDO        &trans
             >;
 
- 			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
+ 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
  		};
 
  		SUPER_layer {
