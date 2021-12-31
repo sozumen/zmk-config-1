@@ -72,7 +72,7 @@
             bindings = <
     &kp ESC      &trans  &trans  &trans  &trans  &trans                                            &kp PG_UP  &kp PG_UP    &kp UP    &kp TAB  &trans  &trans
      &trans      &trans  &trans  &trans  &trans  &trans                                             &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &kp K_REDO   &kp K_UNDO  &trans &kp K_HELP   &trans      &trans    tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB   &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
+ &kp K_REDO   &kp K_UNDO  &trans &kp K_HELP   &trans      &trans    &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB   &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
                                   &trans   &tog NUMBER  &kp K_UNDO   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp K_REDO        &trans
             >;
 
@@ -83,7 +83,7 @@
             bindings = <
 &kp ESC  &trans  &trans  &trans  &trans  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                         &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans        tog SUPER  &kp LALT  &tog FUNCTION    &kp TAB    &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans        &tog SUPER  &kp LALT  &tog FUNCTION    &kp TAB    &trans  &trans  &trans  &trans  &trans  &trans
            &none     &tog NUMBER  &kp BACKSPACE       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
             >;
 
