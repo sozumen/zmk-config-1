@@ -26,7 +26,7 @@
         combo_nav {
             timeout-ms = <50>;
             key-positions = <32 19>;
-            bindings = <&sl NAV>;
+            bindings = <&tog NAV>;
         };
     };
 };
@@ -59,9 +59,9 @@
 
  		SYMBOL_layer {
             bindings = <
- &tog 0  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
+ &tog SYMBOL  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &sl SYMBOL &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &tog SUPER &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
             &none    &tog NUMBER  &kp BACKSPACE &kp LEFT_SHIFT  &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none 
             >;
  			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
@@ -81,9 +81,9 @@
  		NAV_layer {
             bindings = <
     &kp ESC      &trans  &trans  &trans  &trans  &trans                                            &kp PG_UP  &kp PG_UP    &kp UP    &kp TAB  &trans  &trans
-     &trans      &trans  &trans  &trans  &trans  &trans                                             &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+     &trans      &trans  &trans  &trans  &kp K_PASTE  &trans                                             &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
  &kp K_REDO   &kp K_UNDO  &trans &kp K_HELP   &trans      &trans    &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB   &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
-                                  &trans   &tog NUMBER  &kp K_UNDO   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp K_REDO        &trans
+                                  &trans   &tog NUMBER  &kp BACKSPACE   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp DELETE       &trans
             >;
 
  			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
