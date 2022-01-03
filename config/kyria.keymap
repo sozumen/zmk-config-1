@@ -69,10 +69,10 @@
 
  		FUNCTION_layer {
             bindings = <
-    &kp ESC           &kp F1     &kp F2      &kp F3       &kp F4      &kp F5                                                                                  &kp F6                &kp F7        &kp F8        &kp F9  &kp F10  &kp F11
+    &kp LEFT_CONTROL LEFT_ALT DELETE &kp F1     &kp F2      &kp F3       &kp F4      &kp F5                                                                                  &kp F6                &kp F7        &kp F8        &kp F9  &kp F10  &kp F11
     &kp F12  &kp PRINTSCREEN  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp INSERT                                                                    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_VOL_DN  &kp K_VOL_UP      &trans   &trans
- &kp C_AC_REDO       &kp C_AC_UNDO     &trans  &kp K_HELP       &trans      &trans             &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB      &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
-                                             &trans   &tog NUMBER  &kp K_UNDO            &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE      &kp ENTER            &kp K_REDO        &trans
+ &kp LEFT_CONTROL Y       &kp LEFT_CONTROL Z     &trans  &kp K_HELP       &trans      &trans             &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB      &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
+                                             &trans   &tog NUMBER  &kp LEFT_CONTROL Z            &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE      &kp ENTER            &kp LEFT_CONTROL Y        &trans
             >;
 
  			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -82,7 +82,7 @@
             bindings = <
     &kp ESC      &trans  &trans  &trans  &trans  &trans                                            &kp PG_UP  &kp PG_UP    &kp UP    &kp TAB  &trans  &trans
      &trans      &trans  &trans  &trans  &kp K_PASTE  &trans                                             &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &kp K_REDO   &kp K_UNDO  &trans &kp K_HELP   &trans      &trans    &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB   &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
+ &kp LEFT_CONTROL Y   &kp LEFT_CONTROL Z  &trans &kp K_HELP   &trans      &trans    &tog SUPER         &kp LALT  &tog FUNCTION    &kp TAB   &kp K_PLAY_PAUSE            &kp K_STOP    &kp K_PREV    &kp K_NEXT   &trans   &trans
                                   &trans   &tog NUMBER  &kp BACKSPACE   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp DELETE       &trans
             >;
 
