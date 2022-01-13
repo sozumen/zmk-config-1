@@ -14,7 +14,8 @@
 #define FUNCTION 3
 #define NAV      4
 #define SUPER	 5
-#define QWERTY   6
+#define SHIFT	 6
+#define QWERTY   7
 
 
 &left_encoder { resolution = <2>; };
@@ -40,7 +41,7 @@
                &kp ESC   &kp Y   &kp P         &kp O      &kp U          &kp J                                                                           &kp K       &kp D   &kp L   &kp C   &kp W          &kp AMPS
   &kp LEFT_PARENTHESIS   &kp I   &kp N         &kp E      &kp A     &kp COMMA                                                                           &kp M       &kp H   &kp T   &kp S   &kp R  &kp SINGLE_QUOTE
  &kp RIGHT_PARENTHESIS   &kp Q   &kp Z  &kp QUESTION  &kp SLASH      &kp PERIOD                     &mo NAV  &kp LEFT_ALT     &sl FUNCTION &kp TAB      &kp B       &kp F   &kp G   &kp V   &kp X         &kp MINUS
-                                               &none     &tog NUMBER  &kp BACKSPACE       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
+                                               &none     &tog NUMBER  &kp BACKSPACE       &sl SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
             >;
 
 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
@@ -49,8 +50,8 @@
 		NUMBER_layer {
             bindings = <
                &tog 0     &kp KP_NUMLOCK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0                                                                    &kp SLASH    &kp MINUS      &kp UP   &kp PLUS  &kp ASTERISK   &kp EXCLAMATION
- &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp COMMA                                                                    &kp EQUAL     &kp LEFT    &kp DOWN  &kp RIGHT     &kp CARET  &kp GREATER_THAN
-             &kp RPAR  &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp PERIOD                 &sl SYMBOL    &kp LEFT_ALT  &sl FUNCTION    &kp TAB   &kp PIPE  &kp PERCENT  &kp DOLLAR   &kp HASH     &kp GRAVE     &kp LESS_THAN
+ &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp COMMA                                                                    &kp EQUAL     &kp LEFT    &kp DOWN  &kp RIGHT     &kp CARET  &kp GREATER_THAN
+             &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp PERIOD                 &sl SYMBOL    &kp LEFT_ALT  &sl FUNCTION    &kp TAB   &kp PIPE  &kp PERCENT  &kp DOLLAR   &kp HASH     &kp GRAVE     &kp LESS_THAN
                                                                &none    &tog NUMBER  &kp BACKSPACE            &kp LEFT_SHIFT     &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none
             >;
 
@@ -60,8 +61,8 @@
  		SYMBOL_layer {
             bindings = <
  &tog SYMBOL  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &tog SUPER &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
+ &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans  &trans  &trans
+ &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &tog SUPER &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
             &none    &tog NUMBER  &kp BACKSPACE &kp LEFT_SHIFT  &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none 
             >;
  			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
