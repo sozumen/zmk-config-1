@@ -44,7 +44,7 @@
                                                &none     &tog NUMBER  &kp BACKSPACE       &kp LSHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
             >;
 
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
+			sensor-bindings = <BINDING CW_KEY LEFT CCW_KEY RIGHT &inc_dec_kp CW_KEY PG_DN CCW_KEY PG_UP>;
 		};
 
 		NUMBER_layer {
@@ -55,7 +55,7 @@
                                                                &none    &tog NUMBER  &kp BACKSPACE            &kp LEFT_SHIFT     &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none
             >;
 
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
+			sensor-bindings = <BINDING CW_KEY RIGHT CCW_KEY LEFT CW_KEY DOWN CCW_KEY UP>;
 		};
 
  		SYMBOL_layer {
@@ -65,7 +65,7 @@
  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &tog SUPER &kp LEFT_ALT   &sl FUNCTION   &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans
             &none    &tog NUMBER  &kp BACKSPACE &kp LEFT_SHIFT  &kp LCTRL  &kp RIGHT_GUI  &kp SPACE  &kp ENTER   &kp DELETE      &none 
             >;
- 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP>;
+ 			sensor-bindings = <BINDING CW_KEY RIGHT CCW_KEY LEFT CW_KEY DOWN CCW_KEY UP>;
  		};
 
  		FUNCTION_layer {
@@ -76,7 +76,7 @@
                                              &trans   &tog NUMBER  &kp F13            &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE      &kp ENTER            &kp F14        &trans
             >;
 
- 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP>;
+ 			sensor-bindings = <BINDING CW_KEY C_VOL_DN CCW_KEY C_VOL_UP CW_KEY C_BRI_DN CCW_KEY C_BRI_UP>;
  		};
 
  		NAV_layer {
@@ -87,7 +87,7 @@
                                   &trans   &tog NUMBER  &kp BACKSPACE   &kp LSHIFT  &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp SPACE   &kp ENTER            &kp DELETE       &trans
             >;
 
- 			sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_DN PG_UP>;
+ 			sensor-bindings = <BINDING CW_KEY RIGHT CCW_KEY LEFT CW_KEY DOWN CCW_KEY UP>;
  		};
 
  		SUPER_layer {
@@ -104,8 +104,8 @@
 		SHIFT_layer {
             bindings = <
                &trans   &trans  &trans        &trans     &trans        &trans                                                                          &trans      &trans  &trans  &trans  &trans          &kp AMPS
-  &kp LEFT_BRACKET      &trans  &trans        &trans     &trans     &kp COLON                                                                          &trans      &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES
- &kp RIGHT_BRACKET   &trans     &trans  &kp EXCL  &kp BACKSLASH   &kp SEMICOLON             &sl SUPER  &kp LEFT_ALT  &sl FUNCTION     &kp TAB    &trans     &trans  &trans  &trans  &trans       &kp MINUS
+  &kp LEFT_BRACKET      &trans  &trans        &trans     &trans     &kp SEMICOLON                                                                &trans      &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES
+ &kp RIGHT_BRACKET   &trans     &trans  &kp EXCL  &kp BACKSLASH   &kp COLON             &sl SUPER  &kp LEFT_ALT  &sl FUNCTION     &kp TAB    &trans     &trans  &trans  &trans  &trans       &kp MINUS
                                                &none     &tog NUMBER  &kp BACKSPACE       &kp LEFT_SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
             >;
 
@@ -125,7 +125,7 @@
      &none     &tog NUMBER  &kp BACKSPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &sk LEFT_GUI  &kp SPACE  &kp ENTER  &kp DELETE   &none
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <BINDING CW_KEY C_VOL_UP CCW_KEY C_VOL_DN CW_KEY PG_DN CW_KEY PG_UP>;
 		};
 
 	};
